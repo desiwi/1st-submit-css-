@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submit.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Submit your message</title>
+</head>
+<body>
+    <section id="home">
+        <div class="upper">
+            <header>
+                <div class="logo" style="display: flex; align-items: center;">
+                    <div id="imglogo" style="margin-right: 10px;">
+                        <img src="site_logo.png" alt="Logo">
+                        <img src="QCU_Logo_2019.png" alt="Logo">
+                        <img src="ccs_logo.png" alt="Logo">
+                    </div>
+                    <div>
+                        <h1><span>Guess</span> | Who</h1>
+                        <p style="margin: 0;">SBIT1C</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="submit.html">Messages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="logout.php">Log Out</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="socmed_icons">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </header>
+            <div class="container">
+                <div class="form-wrapper">
+                    <h1>Submit Your Unsent Message</h1>
+                    <form action="submit_message.php" method="POST">
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" id="message" rows="5" placeholder="Write your unsent message..." maxlength="25" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="recipient">To:</label>
+                            <input type="text" name="recipient" id="recipient" placeholder="Who is this message for?" maxlength="10">
+                        </div>
+                        
+                        <div class="form-group" style="max-width: 250px; margin: 20px auto; text-align: center;">
+                            <label for="color" style="font-weight: bold; display: block; margin-bottom: 12px; font-size: 1rem;">Message Color:</label>
+                            <div class="custom-select-wrapper">
+                              <select
+                                id="color"
+                                name="color"
+                                aria-label="Select a color for the message"
+                                onchange="updateColorPreview(this)"
+                                class="custom-select">
+                                <option value="#FF0000" style="color: #FF0000;">🔴 Red</option>
+                                <option value="#FFA500" style="color: #FFA500;">🟠 Orange</option>
+                                <option value="#FFFF00" style="color: #FFFF00;">🟡 Yellow</option>
+                                <option value="#008000" style="color: #008000;">🟢 Green</option>
+                                <option value="#0000FF" style="color: #0000FF;">🔵 Blue</option>
+                                <option value="#EE82EE" style="color: #EE82EE;">🟣 Violet</option>
+                              </select>
+                            </div>  
+                          </div>
+                        
+                        <button type="submit">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

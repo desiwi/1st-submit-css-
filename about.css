@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+.upper{
+    background: url('001.jpg');
+    background-size: cover;
+    width: 100%; 
+    height: 100vh; 
+}
+
+header{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 30px 40px 30px;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+#imglogo img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.logo p{
+    padding-left: 2px;
+    font-size: 15px;
+}
+.logo h1 span{
+    color: #6b409f;
+}
+
+nav{
+    padding-right: 0;
+
+}
+nav ul li{
+    justify-content: flex-end;
+    align-items: center;
+    display: inline-block;
+}
+nav ul li a{
+    color: rgb(58, 57, 57);
+    margin-left: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+nav ul li a:hover{
+    color: #B794F4;
+    border-bottom: 1px solid rgb(88, 87, 87);
+}
+.socmed_icons{
+    font-size: 20px;
+}
+
+i {
+    margin-left: 18px;
+}
+
+i :hover{
+    background-color: rgb(167, 164, 160);
+    transition: .3s ease-in-out;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.intro h4{
+    display: flex;
+    justify-content: center;
+}
+
+.intro h2{
+    margin-top: -13px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 44, 111);
+    font-family: sans-serif;
+    letter-spacing: -3px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 20px;
+    border: solid 2px black;
+    font-variant: small-caps;
+}
+.intro h4{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3e206d;  
+    text-align: center;                              
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    font-family: 'Lora', serif;
+}
+.intro p{
+    font-size: 19px;
+    line-height: 25px;
+}
+.intro a{
+    color:aliceblue;
+    background-color: #B794F4;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: black;
+    padding: 7px 18px 9px 16px;
+    border-radius: 5px;
+    transition: .3s;
+    height: 50vh;
+}
+.intro a:hover{
+    background-color: rgba(29, 26, 26, 0.575);
+}
+
+img.me{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.intro h5 {
+    margin-top: -10px;
+    color:  #6b409f;
+    background-color: transparent;
+    font-family: 'Merriweather';
+    letter-spacing: -1px;
+    font-size: 30px;
+    font-weight: 70;
+    text-align: left;
+    padding: 10px 20px;
+    border: transparent;
+    font-variant: small-caps;
+}
+
+
+.typewriter h5 {
+overflow: hidden; 
+border-right: .15em solid #6b409f; 
+white-space: nowrap;
+margin: 0 auto; 
+letter-spacing: .15em; 
+animation: typing 4s steps(50, end), blink-cursor 1s step-end infinite;
+}
+@keyframes typing {
+from { width: 0;}
+to { width: 100%;}
+}
+@keyframes reverseTyping {
+from { width: 100%;}
+to { width: 0%;}
+}
+@keyframes blink-cursor {
+from, to { border-color: transparent}
+50% { border-color:#6b409f;}
+}
+
+.container h6 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 20px 0;
+    line-height: 150%;
+    word-spacing: 5px;
+}
+
+/*** Media Query ***/
+@media screen and (max-width: 1100px) {
+        .upper{
+            max-width: 900px;
+        }
+}
+@media screen and (max-width: 900px) {
+        .upper{
+            max-width: 800px;
+        }
+        header{
+            max-width: 750px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        nav ul li a{           
+            margin-left: 24px;
+        }
+        i {
+            margin-left: 14px;
+        }
+}
+@media screen and (max-width: 800px) {
+        .upper{
+            max-width: 700px;
+        }
+        nav {           
+            font-size: 15px;
+            margin-left: 30px;
+        }
+        .logo h1{
+            font-size: 15px;
+        }
+        .logo p{
+            font-size: 13px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            position: relative;
+        }
+        .socmed_icons i{
+            font-size: 23px;
+            margin-left: 11px;
+        }
+        nav ul{
+            margin-top: 18px;
+        }
+        nav ul li a{
+            font-size: 15px;
+            margin-left: 0;
+            margin-right: 18px;
+        }
+}
+@media screen and (max-width: 700px) {
+        .upper{
+            max-width: 600px;
+        }
+        .logo{
+            margin-top: 8px;
+        }
+        .logo p{
+            font-size: 10px;
+        }
+        nav{
+            margin-left: 15px;
+        }
+        nav ul li a{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .socmed_icons{
+            margin-top: 8px;
+            font-size: 20px;
+        }
+}
+@media screen and (max-width: 600px) {
+    .upper{
+        max-width: 460px ;
+    }
+    .logo h1{
+        font-size: 11px;
+    }
+    .logo p{
+        font-size: 8px;
+    }
+    nav ul{
+        margin-top: 10px;
+    }
+    nav ul li a{
+        font-size: 11px;
+        margin-right: 6px;
+    }
+    .socmed_icons i{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .intro h4{
+        font-size: 30px;
+    }
+    .intro h1{
+        font-size: 45px;
+        line-height: 40px;
+        margin-top: -3px;
+        margin-bottom: 4px;
+    }
+    .intro p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .upper{
+        max-width: 420px;
+    }
+    header{
+        justify-content: flex-start;
+        align-items: start;
+        width: 100%;
+        max-width: 100%;
+        margin-right: 30px;
+        margin-left: 16px;
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .logo h1{
+        font-size: 15px;
+    }
+    .logo p{
+        font-size: 11px;
+    }
+    nav{
+        margin-top: 2px;
+    }
+    nav ul li a{
+        font-size: 17px;
+        margin-left: 0;
+        margin-right: 22px;
+    }
+    .socmed_icons{
+        position: absolute;
+        right: 5%;
+        margin-right: 12px;
+        margin-top: 8px;
+    }
+    .socmed_icons i{
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    .container{
+        flex-direction: column;
+        margin-left: 16px;
+        padding-left: 0;
+    }
+    .intro,
+    .intro h1,
+    .intro h4{
+        text-align: center;
+    }
+    .intro h1{
+        line-height: 40px;
+        margin: 5px 0 5px 0;
+    }
+    img.me{
+        top: 50%;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .upper{
+        max-width: 325px;
+        padding-left: 0;
+    }
+    nav ul li a{
+        font-size: 15px;
+        margin-right: 14px;
+    }
+    .socmed_icons{
+        margin-right: 0;
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .upper{
+        max-width: 240px;
+    }
+    header{
+        margin-left: 5px;
+    }
+    .logo p, h1{
+        font-size: 12px;
+    }
+    nav{
+        padding-right: 0;
+    }
+    nav ul li a{
+        font-size: 11px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .socmed_icons{
+        font-size: 15px;
+        right: 1%;
+        margin-top: 14px;
+    }
+    .socmed_icons i{
+        margin-left: 7px;
+        font-size: 16px;
+    }
+
+}
